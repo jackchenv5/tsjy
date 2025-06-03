@@ -1,0 +1,11 @@
+{
+  "name": "@faoem/facility-status",
+  "version": "1.0.2",
+  "main": "index.js",
+  "scripts": {},
+  "author": "He Jia Min",
+  "description": "",
+  "dependencies": {
+    "@faoem/common": "^1.2.2"
+  }
+}

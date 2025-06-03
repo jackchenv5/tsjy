@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Compile Remove="Dtos\RollDiameter.cs" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.10">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\Faoem.Common\Faoem.Common.csproj" />
+        <ProjectReference Include="..\Faoem.FacilityStatus\Faoem.FacilityStatus.csproj" />
+        <ProjectReference Include="..\Faoem.Facility\Faoem.Facility.csproj" />
+        <ProjectReference Include="..\Faoem.ModbusTcpConnector\Faoem.ModbusTcpConnector.csproj" />
+        <ProjectReference Include="..\Faoem.Mqtt\Faoem.Mqtt.csproj" />
+        <ProjectReference Include="..\Faoem.OpcUaConnector\Faoem.OpcUaConnector.csproj" />
+        <ProjectReference Include="..\Faoem.S7Connector\Faoem.S7Connector.csproj" />
+        <ProjectReference Include="..\Faoem.Shift\Faoem.Shift.csproj" />
+        <ProjectReference Include="..\Faoem.Variable\Faoem.Variable.csproj" />
+    </ItemGroup>
+
+</Project>

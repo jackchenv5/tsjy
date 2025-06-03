@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FA OEM App</title>
+  </head>
+  <body>
+    <div id="app">
+      <div id="loading">
+        <img src="src/assets/loading.gif" alt="loading" />
+        <div>正在加载……</div>
+        <div>Loading...</div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+  <style>
+    html,
+    body {
+      height: 100%;
+      width: 100%;
+      min-width: 375px;
+      padding: 0;
+      margin: 0;
+      font-size: 10px;
+    }
+
+    #app {
+      height: 100%;
+      width: 100%;
+      font-size: 1.4rem;
+    }
+
+    #loading {
+      display: flex;
+      height: 100%;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      flex-flow: column nowrap;
+    }
+
+    #loading img {
+      height: 10rem;
+      width: 10rem;
+    }
+  </style>
+</html>

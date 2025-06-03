@@ -1,0 +1,48 @@
+export const variableMonitorLang = {
+  en: {
+    el: {
+      variableMonitor: {
+        variableMonitor: 'Variable Monitor',
+        nameFilterPlaceholder: 'enter variable name',
+        refresh: 'Refresh',
+        autoRefresh: 'Auto Refresh',
+        connectorInstance: 'Connector Instance',
+        connectionName: 'Connection Name',
+        dataPointName: 'Data Point Name',
+        name: 'Name',
+        value: 'Value',
+        dataType: 'Data Type',
+        accessMode: 'Access Mode',
+        acquisitionCycleInMs: 'Acquisition Cycle (ms)',
+        acquisitionMode: 'Acquisition Mode',
+        id: 'Id',
+        isArray: 'Is Array',
+        qualityCode: 'Quality Code',
+        lastUpdated: 'Last Updated',
+      },
+    },
+  },
+  zhCn: {
+    el: {
+      variableMonitor: {
+        variableMonitor: '变量监控',
+        nameFilterPlaceholder: '输入变量名称',
+        refresh: '刷新',
+        autoRefresh: '自动刷新',
+        connectorInstance: '连接器实例',
+        connectionName: '连接名称',
+        dataPointName: '数据点名称',
+        name: '名称',
+        value: '值',
+        dataType: '数据类型',
+        accessMode: '访问模式',
+        acquisitionCycleInMs: '采集周期（毫秒）',
+        acquisitionMode: '采集模式',
+        id: 'Id',
+        isArray: '是否数组',
+        qualityCode: '质量代码',
+        lastUpdated: '上次更新',
+      },
+    },
+  },
+}

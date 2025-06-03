@@ -1,0 +1,13 @@
+{
+  "name": "@faoem/facility-maintain",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {},
+  "author": "He Jia Min",
+  "description": "",
+  "dependencies": {
+    "@faoem/common": "^1.2.3",
+    "@faoem/facility": "^1.1.1",
+    "xlsx": "https://cdn.sheetjs.com/xlsx-0.20.3/xlsx-0.20.3.tgz"
+  }
+}

@@ -1,0 +1,29 @@
+bin/
+obj/
+/packages/
+riderModule.iml
+/_ReSharper.Caches/
+
+# sqlite 数据库文件
+*.db
+
+# sqlite 数据库打开时的临时文件
+*.db-shm
+*.db-wal
+*.db-journal
+
+# macOS 系统文件
+.DS_Store
+
+# jetbrains 软件内部加载数据库的配置
+dataSources.xml
+
+# 静态文件
+**/wwwroot/*
+
+# 一直保留 .gitkeep 文件
+!.gitkeep
+
+*.Development.json
+
+*.sln.DotSettings.user

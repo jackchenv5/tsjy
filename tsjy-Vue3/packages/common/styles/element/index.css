@@ -1,0 +1,25 @@
+@import 'dark.css';
+
+:root {
+  --el-color-primary: var(--primary-6);
+  --el-color-primary-light-3: var(--primary-5);
+  --el-color-primary-light-5: var(--primary-4);
+  --el-color-primary-light-7: var(--primary-3);
+  --el-color-primary-light-8: var(--primary-2);
+  --el-color-primary-light-9: var(--primary-1);
+  --el-color-primary-dark-2: var(--primary-7);
+}
+
+.el-drawer__header {
+  margin-bottom: 0;
+  padding-bottom: 20px;
+  background-color: var(--el-bg-color-page);
+}
+
+.el-drawer__header > .el-drawer__title {
+  font-size: 1.6rem;
+}
+
+.el-date-table td.disabled .el-date-table-cell {
+  background-color: var(--el-bg-color-page);
+}

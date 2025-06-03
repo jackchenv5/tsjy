@@ -1,0 +1,17 @@
+{
+  "name": "@faoem/facility",
+  "version": "1.1.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "author": "He Jia Min",
+  "dependencies": {
+    "@faoem/common": "^1.2.3"
+  },
+  "eslintConfig":{
+  "parser":"vue-eslint-parser",
+  "parserOptions":{
+    "parser":"@typescript-eslint/parser"
+  }
+}
+}

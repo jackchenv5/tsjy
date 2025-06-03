@@ -1,0 +1,14 @@
+html.dark {
+  --el-color-primary: var(--primary-6);
+  --el-color-primary-light-3: var(--primary-5);
+  --el-color-primary-light-5: var(--primary-4);
+  --el-color-primary-light-7: var(--primary-3);
+  --el-color-primary-light-8: var(--primary-2);
+  --el-color-primary-light-9: var(--primary-1);
+  --el-color-primary-dark-2: var(--primary-7);
+
+  --el-bg-color: hsl(180, 10%, 10%);
+  --el-bg-color-page: hsl(180, 10%, 16%);
+
+  --el-menu-hover-bg-color: hsl(180, 100%, 16%);
+}

@@ -1,0 +1,48 @@
+export const maintainPlansLang = {
+  en: {
+    el: {
+      maintainPlans: {
+        maintainPlan: 'Maintain Plan',
+        partName: 'Part Name',
+        filter: 'Filter',
+        createdAt: 'Create At',
+        lastMaintainAt: 'Last Maintain At',
+        nextMaintainAt: 'Next Maintain At',
+        status: 'Status',
+        maintainCycleWithUnit: 'Maintain Cycle(days)',
+        partPosition: 'Part Position',
+        maintain: 'Maintain',
+        partMaintain: 'Part Maintain',
+        maintainContent: 'Maintain Content',
+        maintainReason: 'Maintain Reason',
+        save: 'Save',
+        requiredMsg: 'Required',
+        saveMaintainContentSuccess: 'The maintain content has been saved.',
+        saveMaintainContentFail: 'Failed to save the maintain content.',
+      },
+    },
+  },
+  zhCn: {
+    el: {
+      maintainPlans: {
+        maintainPlan: '维护计划',
+        partName: '部件名称',
+        filter: '筛选',
+        createdAt: '创建时间',
+        lastMaintainAt: '上次维护时间',
+        nextMaintainAt: '下次维护时间',
+        status: '状态',
+        maintainCycleWithUnit: '维护周期（天）',
+        partPosition: '部件位置',
+        maintain: '维护',
+        partMaintain: '部件维护',
+        maintainContent: '维护内容',
+        maintainReason: '维护原因',
+        save: '保存',
+        requiredMsg: '必填',
+        saveMaintainContentSuccess: '维护内容保存成功。',
+        saveMaintainContentFail: '维护内容保存失败。',
+      },
+    },
+  },
+}

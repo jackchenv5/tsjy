@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <Authors>He Jia Min</Authors>
+        <Version>1.0.0</Version>
+        <RepositoryUrl>https://code.hejiamin.com/FAOEM/Faoem</RepositoryUrl>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <IsPackable>false</IsPackable>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\Faoem.Common\Faoem.Common.csproj"/>
+        <ProjectReference Include="..\Faoem.Mqtt\Faoem.Mqtt.csproj"/>
+        <ProjectReference Include="..\Faoem.Variable\Faoem.Variable.csproj"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="System.Text.Encoding.CodePages" Version="8.0.0"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Include="README.md" Pack="true" PackagePath=""/>
+    </ItemGroup>
+
+</Project>
