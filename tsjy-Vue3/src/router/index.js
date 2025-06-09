@@ -4,158 +4,37 @@ import { commonRoutes } from '#/common/routes'
 import { mqttRoutes } from '#/mqtt/routes/index.js'
 import { variableRoutes } from '#/variable/routes/index.js'
 import { shiftRoutes } from '#/shift/routes/index.js'
-import { facilityRoutes } from '#/facility/routes/index.js'
-import { facilityStatusRoutes } from '#/facility-status/routes/index.js'
+// import { facilityRoutes } from '#/facility/routes/index.js'
+// import { facilityStatusRoutes } from '#/facility-status/routes/index.js'
 
-const tsjyRoutes = [
+const facilityRoutes = [
   {
-    path: '/tsjy-facility-status',
+    path: '/facilitys',
     component: () => import('#/common/layouts/DefaultLayouts.vue'),
     children: [
       {
-        path: 'status',
-        component: () => import('@/views/StatusSummary.vue'),
+        path: 'all',
+        component: () => import('@/views/facilitys/All.vue'),
       },
       {
-        path: 'status-binding',
-        component: () => import('@/views/StatusBinding.vue'),
-      },
-    ],
-  },
-  {
-    path: '/tsjy-facility-showall',
-    component: () => import('#/common/layouts/DefaultLayouts.vue'),
-    children: [
-      {
-        path: 'showall',
-        component: () => import('@/views/FacilityShowAll.vue'),
-      }
-    ],
-  },
-  {
-    path: '/tsjy-alarm',
-    component: () => import('#/common/layouts/DefaultLayouts.vue'),
-    children: [
-      {
-        path: 'definition',
-        component: () => import('@/views/AlarmDefinition.vue'),
+        path: 'parameters',
+        component: () => import('@/views/facilitys/Parameters.vue'),
       },
       {
-        path: 'current-alarms',
-        component: () => import('@/views/CurrentAlarm.vue'),
+        path: 'monitor',
+        component: () => import('@/views/facilitys/MotorMonitor.vue'),
       },
       {
-        path: 'alarms-history',
-        component: () => import('@/views/AlarmHistory.vue'),
-      },
-    ],
-  },
-  {
-    path: '/tsjy-motor',
-    component: () => import('#/common/layouts/DefaultLayouts.vue'),
-    children: [
-      {
-        path: 'setting',
-        component: () => import('@/views/MotorSetting.vue'),
+        path: 'oee',
+        component: () => import('@/views/facilitys/Oee.vue'),
       },
       {
-        path: 'data',
-        component: () => import('@/views/MotorData.vue'),
-      },
-    ],
-  },
-  {
-    path: '/tsjy-production',
-    component: () => import('#/common/layouts/DefaultLayouts.vue'),
-    children: [
-      {
-        path: 'setting',
-        component: () => import('@/views/ProductionSetting.vue'),
+        path: 'alarm',
+        component: () => import('@/views/facilitys/Aalarm.vue'),
       },
       {
         path: 'history',
-        component: () => import('@/views/ProductionHistory.vue'),
-      },
-    ],
-  },
-  {
-    path: '/tsjy-craft',
-    component: () => import('#/common/layouts/DefaultLayouts.vue'),
-    children: [
-      {
-        path: 'binding',
-        component: () => import('@/views/CraftBinding.vue'),
-      },
-      {
-        path: 'history',
-        component: () => import('@/views/CraftHistory.vue'),
-      },
-    ],
-  },
-  {
-    path: '/tsjy-part',
-    component: () => import('#/common/layouts/DefaultLayouts.vue'),
-    children: [
-      {
-        path: 'list',
-        component: () => import('@/views/PartList.vue'),
-      },
-      {
-        path: 'binding',
-        component: () => import('@/views/PartBinding.vue'),
-      },
-      {
-        path: 'history',
-        component: () => import('@/views/PartMaintainHistory.vue'),
-      },
-    ],
-  },
-  {
-    path: '/hy-roll-diameter',
-    component: () => import('#/common/layouts/DefaultLayouts.vue'),
-    children: [
-      {
-        path: '',
-        component: () => import('@/views/DiameterData.vue'), // 主界面
-        children: [
-          {
-            path: '',
-            redirect: '/hy-roll-diameter/realtime'
-          },
-          {
-            path: 'realtime',
-            component: () => import('@/components/RollDiameterRealtimeData.vue'),
-          },
-          {
-            path: 'history',
-            component: () => import('@/components/RollDiameterHistoryData.vue'),
-          },
-        ],
-      },
-    ],
-  },
-  
-  {
-    path: '/hy-PrintLength',
-    component: () => import('#/common/layouts/DefaultLayouts.vue'),
-    children: [
-      {
-        path: '',
-        component: () => import('@/views/PrintLength.vue'), // 主界面
-        children: [
-          {
-            path: '',
-            redirect: '/hy-PrintLength/realtime' // 默认重定向到实时数据
-          },
-          {
-            path: 'realtime',
-            component: () => import('@/components/PrintLengthRealtime.vue'),
-          },
-          {
-            path: 'history',
-            component: () => import('@/components/PrintLengthHistory.vue'),
-          },
-        ],
+        component: () => import('@/views/facilitys/History.vue'),
       },
     ],
   },
@@ -169,8 +48,8 @@ const router = createRouter({
     ...variableRoutes,
     ...shiftRoutes,
     ...facilityRoutes,
-    ...facilityStatusRoutes,
-    ...tsjyRoutes,
+    // ...facilityStatusRoutes,
+    // ...tsjyRoutes,
   ],
 })
 
